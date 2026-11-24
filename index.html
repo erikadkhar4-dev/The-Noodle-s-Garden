@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Noodle's Garden — Family Chinese Restaurant, Roha</title>
+<meta name="description" content="The Noodle's Garden, a family Chinese restaurant in Roha. Hakka noodles, schezwan rice, chicken lollipop and more, served under string lights. Open from 5 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo">The Noodle's <span>Garden</span></a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+    <div class="links" id="links">
+      <a href="#about">Our Story</a>
+      <a href="#menu">Favourites</a>
+      <a href="#visit">Visit</a>
+      <a href="#reviews">Reviews</a>
+      <a class="btn btn-primary" href="tel:+918446500304">Call to Book</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img src="images/garden-night.jpg" alt="Open-air garden seating at The Noodle's Garden lit by string lights at dusk">
+  <canvas id="sparkles"></canvas>
+  <div class="hero-in">
+    <div class="badge"><b>★ 4.6</b> on Google · Family Chinese Restaurant · Roha</div>
+    <h1>Noodles under <em>a sky of lights.</em></h1>
+    <p>Wok-tossed Hakka noodles, fiery schezwan rice and crispy chicken lollipops, served in a lantern-lit garden. Come hungry, bring the family.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="tel:+918446500304">📞 Call 084465 00304</a>
+      <a class="btn btn-ghost" href="#menu">See our favourites</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div>
+    <span>Hakka Noodles</span>✦<span>Schezwan Rice</span>✦<span>Chicken Lollipop</span>✦<span>Chilli Paneer</span>✦<span>Chicken Drums</span>✦<span>Family Garden Seating</span>✦
+    <span>Hakka Noodles</span>✦<span>Schezwan Rice</span>✦<span>Chicken Lollipop</span>✦<span>Chilli Paneer</span>✦<span>Chicken Drums</span>✦<span>Family Garden Seating</span>✦
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal">
+      <img src="images/banana-leaf-rice.jpg" alt="Egg schezwan rice served on a banana leaf" loading="lazy">
+      <div class="tag">Served on a banana leaf 🌿</div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Our Story</div>
+      <h2>Indo-Chinese comfort, the way Roha likes it.</h2>
+      <p class="lead">The Noodle's Garden is a family Chinese restaurant on the Roha–Kolad road. Tables sit out in an open garden, strung with fairy lights, so dinner feels more like a get-together than a night out.</p>
+      <p class="lead" style="margin-top:14px">Our menu is built around what regulars ask for again and again: saucy noodles, smoky rice, juicy chicken starters and paneer for the vegetarians in the group.</p>
+      <div class="stats">
+        <div class="stat"><b>4.6★</b><small>Google rating (46 reviews)</small></div>
+        <div class="stat"><b>₹200–400</b><small>Typical spend per person</small></div>
+        <div class="stat"><b>5 PM</b><small>Doors open for dinner</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="menu-head reveal">
+      <div>
+        <div class="eyebrow">From the Kitchen</div>
+        <h2 style="margin:0">Crowd favourites</h2>
+      </div>
+      <div class="filters" id="filters">
+        <button class="chip active" data-f="all">All</button>
+        <button class="chip" data-f="starters">Starters</button>
+        <button class="chip" data-f="noodles">Noodles &amp; Rice</button>
+        <button class="chip" data-f="veg">Vegetarian</button>
+      </div>
+    </div>
+
+    <div class="grid" id="grid">
+      <article class="dish reveal" data-c="starters">
+        <div class="ph"><img src="images/chicken-lollipop.jpg" alt="Chicken lollipops with schezwan dip" loading="lazy"></div>
+        <div class="tx"><div class="cat">Starter</div><h3>Chicken Lollipop</h3><p>Crimson-fried drumettes on crispy noodle nest with a punchy dip.</p></div>
+      </article>
+      <article class="dish reveal" data-c="noodles">
+        <div class="ph"><img src="images/noodles-rice-trio.jpg" alt="Plate of schezwan noodles, hakka noodles and manchurian gravy" loading="lazy"></div>
+        <div class="tx"><div class="cat">Combo Plate</div><h3>Noodles &amp; Rice Trio</h3><p>Schezwan and hakka noodles side by side with a glossy gravy.</p></div>
+      </article>
+      <article class="dish reveal" data-c="noodles">
+        <div class="ph"><img src="images/schezwan-noodles.jpg" alt="Schezwan noodles with spring onion" loading="lazy"></div>
+        <div class="tx"><div class="cat">Noodles</div><h3>Schezwan Noodles</h3><p>Fiery, wok-tossed and finished with fresh spring onion.</p></div>
+      </article>
+      <article class="dish reveal" data-c="noodles">
+        <div class="ph"><img src="images/hakka-noodles.jpg" alt="Bowl of hakka noodles" loading="lazy"></div>
+        <div class="tx"><div class="cat">Noodles</div><h3>Hakka Noodles</h3><p>The classic: golden noodles, crisp veg, a light smoky finish.</p></div>
+      </article>
+      <article class="dish reveal" data-c="starters">
+        <div class="ph"><img src="images/chicken-drums.jpg" alt="Fried chicken drumsticks on cabbage" loading="lazy"></div>
+        <div class="tx"><div class="cat">Starter</div><h3>Chicken Drums</h3><p>Crisp-fried drumsticks on shredded cabbage, great for sharing.</p></div>
+      </article>
+      <article class="dish reveal" data-c="starters">
+        <div class="ph"><img src="images/schezwan-chicken-drums.jpg" alt="Chicken drumsticks in red schezwan sauce" loading="lazy"></div>
+        <div class="tx"><div class="cat">Starter</div><h3>Schezwan Chicken Drums</h3><p>Saucy, tangy and spicy, best with a bowl of noodles on the side.</p></div>
+      </article>
+      <article class="dish reveal" data-c="starters veg">
+        <div class="ph"><img src="images/chilli-paneer.jpg" alt="Chilli paneer with green chilli and spring onion" loading="lazy"></div>
+        <div class="tx"><div class="cat">Vegetarian Starter</div><h3>Chilli Paneer</h3><p>Soft paneer cubes glazed in a sticky chilli sauce.</p></div>
+      </article>
+    </div>
+    <p class="note">Dish names and descriptions are based on our photos. Ask at the table for today's full menu and prices.</p>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:40px">
+      <div class="eyebrow">Plan Your Visit</div>
+      <h2>Find us in Roha</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="panel reveal">
+        <h3>Details</h3>
+        <div class="row"><div class="ic">📍</div><div><small>Address</small>Roha – Kolad Rd, Varse, Roha,<br>Maharashtra 402109</div></div>
+        <div class="row"><div class="ic">🕔</div><div><small>Hours</small>Opens 5 PM · Holiday hours may vary</div></div>
+        <div class="row"><div class="ic">📞</div><div><small>Phone</small><a href="tel:+918446500304">084465 00304</a></div></div>
+        <div class="row"><div class="ic">🍜</div><div><small>Cuisine &amp; Price</small>Chinese · ₹200–400 per person</div></div>
+        <div class="actions">
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Noodles+Garden+Roha+Kolad+Road+Varse">Get Directions</a>
+          <a class="btn btn-ghost" href="tel:+918446500304">Call</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://wa.me/918446500304">WhatsApp</a>
+        </div>
+      </div>
+      <div class="panel reveal">
+        <h3>When it gets busy</h3>
+        <p class="lead" style="font-size:.92rem">A typical Tuesday, from Google. Evenings fill up, so call ahead for larger groups.</p>
+        <div class="bars" id="bars">
+          <div class="bar" data-h="18"></div><div class="bar" data-h="34"></div><div class="bar" data-h="52"></div>
+          <div class="bar" data-h="78"></div><div class="bar peak" data-h="100"></div><div class="bar" data-h="88"></div><div class="bar" data-h="62"></div>
+        </div>
+        <div class="axis"><span>5p</span><span>6p</span><span>7p</span><span>8p</span><span>9p</span><span>10p</span><span>11p</span></div>
+        <p style="margin-top:18px;color:var(--muted);font-size:.9rem">Usually no wait · People spend 15 min to 4 hr here</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Guest Love</div>
+      <h2>What people say</h2>
+      <div class="rating">
+        <div class="big">4.6</div>
+        <div><div class="stars">★★★★★</div><small style="color:var(--muted)">46 Google reviews</small></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <q>Awesome food, best for families.</q>
+        <div class="by">— MoNU MR, Google Local Guide</div>
+        <div class="scores"><span>Food 5</span><span>Service 5</span><span>Atmosphere 5</span></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <q>Really good taste and also good service.</q>
+        <div class="by">— Google reviewer</div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <q>Reviewers like the chicken Chinese bhel.</q>
+        <div class="by">— Google "Know before you go" highlight</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">The Noodle's Garden</span>
+    Family Chinese Restaurant · Roha – Kolad Rd, Varse, Roha 402109 · <a href="tel:+918446500304" style="color:var(--gold)">084465 00304</a>
+  </div>
+</footer>
+
+<div class="lb" id="lb" aria-modal="true" role="dialog">
+  <button class="x" id="lbx" aria-label="Close">✕</button>
+  <button class="pv" id="lbp" aria-label="Previous">‹</button>
+  <img id="lbi" alt="">
+  <p id="lbt"></p>
+  <button class="nx" id="lbn" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
